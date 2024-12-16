@@ -6,13 +6,6 @@ import java.util.ListIterator;
 
 public class ArrayListIterator {
     public static void main(String[] args) {
-
-        int a=10;
-        int b=20,c=30;
-
-        System.out.println((b>a)&&(c>b));
-
-
         ArrayList<String> cities=new ArrayList<>();
 
         cities.add("Hyderabad");
