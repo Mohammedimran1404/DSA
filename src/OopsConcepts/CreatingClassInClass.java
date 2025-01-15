@@ -6,10 +6,10 @@ public class CreatingClassInClass {
         CreateOtherClass[] createOtherClasses=new CreateOtherClass[5];
 
         for (int i=0;i<createOtherClasses.length;i++){
-            createOtherClasses[i]=new CreateOtherClass();
-            createOtherClasses[i].strStudentName="Student "+(i+1);
-            createOtherClasses[i].RollNo=i+1;
-            createOtherClasses[i].strMarks="40"+i;
+            createOtherClasses[i]=new CreateOtherClass("Student "+(i+1),i+1,"40"+i);
+//            createOtherClasses[i].strStudentName="Student "+(i+1);
+//            createOtherClasses[i].RollNo=i+1;
+//            createOtherClasses[i].strMarks="40"+i;
 
         }
         for (int i=0;i<createOtherClasses.length;i++){
@@ -28,5 +28,12 @@ public class CreatingClassInClass {
     String strStudentName;
     int RollNo;
     String strMarks;
+
+public CreateOtherClass(String strStudentName,int RollNo,String strMarks){
+    this.strStudentName=strStudentName;
+    this.RollNo=RollNo;
+    this.strMarks=strMarks;
+
+}
 
 }

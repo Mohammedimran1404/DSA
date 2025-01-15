@@ -3,18 +3,19 @@ package LinearSearchAlgorithm;
 public class PracticeClass {
     public static void main(String[] args) {
 
-        int[][] array={{123},{4567},{3221},{234},{344}};
+        String strName="Kairos Technologies";
 
-        for (int i=0;i<array.length;i++){
-            int count=0;
-            for (int j=0;j<array[i].length;j++){
-
+        String[] strArray=strName.split(" ");
+        String strNew="";
+        for (String str:strArray){
+            String strReversed="";
+            for (int i=str.length()-1;i>=0;i--){
+                strReversed=strReversed+str.charAt(i);
+            }
+            strNew=strNew.concat(strReversed).concat(" ");
+        }
+        System.out.println(strNew.trim());
 
 
             }
         }
-
-
-
-    }
-}

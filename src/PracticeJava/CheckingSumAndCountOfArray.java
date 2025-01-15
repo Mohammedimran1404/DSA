@@ -11,9 +11,9 @@ public class CheckingSumAndCountOfArray {
            int count=0;
            int number=array[i];
            while (number>0){
+               count++;
                int lastDigit=number%10;
                sum=sum+lastDigit;
-               count++;
                number=number/10;
            }
           if (sum%2==0&&count%2==0){

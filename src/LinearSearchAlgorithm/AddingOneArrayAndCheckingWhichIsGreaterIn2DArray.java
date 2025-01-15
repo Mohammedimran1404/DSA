@@ -7,6 +7,7 @@ public class AddingOneArrayAndCheckingWhichIsGreaterIn2DArray {
         int[][] array = {{1, 2, 4}, {4, 3, 6}, {1, 1, 1}};
 
         int maxAmount = array[0][0];
+//        System.out.println(maxAmount);
 
         for (int i = 0; i < array.length; i++) {
             int sum = 0;
