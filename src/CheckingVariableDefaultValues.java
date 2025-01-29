@@ -1,22 +1,22 @@
 public class CheckingVariableDefaultValues {
-        int a = 0;
-        boolean b;
-        short s;
-        double d;
-        float f;
-        byte by;
-        long l;
-        String str;
+    static int a = 0;
+    static boolean b;
+    static short s;
+    static double d;
+    static float f;
+    static byte by;
+    static long l;
+    static String str;
 
     public static void main(String[] args) {
-        CheckingVariableDefaultValues checkingVariableDefaultValues=new CheckingVariableDefaultValues();
-        System.out.println(checkingVariableDefaultValues.a);
-        System.out.println(checkingVariableDefaultValues.b);
-        System.out.println(checkingVariableDefaultValues.s);
-        System.out.println(checkingVariableDefaultValues.d);
-        System.out.println(checkingVariableDefaultValues.f);
-        System.out.println(checkingVariableDefaultValues.by);
-        System.out.println(checkingVariableDefaultValues.l);
-        System.out.println(checkingVariableDefaultValues.str);
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(s);
+        System.out.println(d);
+        System.out.println(f);
+        System.out.println(by);
+        System.out.println(l);
+        System.out.println(str);
     }
 }
