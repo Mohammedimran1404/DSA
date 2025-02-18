@@ -19,8 +19,8 @@ public class Car {
 
         Car myPetrolCar=new Car(petrolEngine);
         myPetrolCar.startEngine();
-        Engine.fourTyres();
-        petrolEngine.brake();
+//        Engine.fourTyres();
+//        petrolEngine.brake();
 
 
     }
