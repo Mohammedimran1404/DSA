@@ -12,7 +12,6 @@ public class RemoveDuplicatesInArray {
                 int temp = array[j];
                 array[j]=array[i];
                 array[i]=temp;
-
             }
         }
         for (int i=0;i<=j;i++){

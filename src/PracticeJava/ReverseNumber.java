@@ -11,7 +11,6 @@ public class ReverseNumber {
             num=num/10;
             rev=rev*10+rem;
 
-
         }
         System.out.println(rev);
     }
