@@ -9,7 +9,7 @@ public class MergeTwoArrays {
         int [] mergeArray=new int[array.length+array1.length];
 
         for(int i=0;i<array.length;i++){
-            mergeArray[i]+=array[i];
+            mergeArray[i]=array[i];
         }
         for(int i=0;i<array1.length;i++){
             mergeArray[array.length+i]=array1[i];
