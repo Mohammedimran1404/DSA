@@ -4,7 +4,7 @@ public class FibonacciNumbers {
 
     public static void main(String[] args) {
 
-        int num=4;
+        int num=6;
         int a=0;
         int b=1;
         System.out.print(a+" "+b);
