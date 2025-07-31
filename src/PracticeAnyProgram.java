@@ -1,40 +1,44 @@
-import java.util.Arrays;
-import java.util.HashSet;
+import java.util.HashMap;
+import java.util.Map;
 
 public class PracticeAnyProgram {
     public static void main(String[] args) {
 
+        String str = "abcdbca";
+        char[] charArray = str.toCharArray();
 
-        int[] array={1,2,3,4,1,5,4};
+        HashMap<Character, Integer> map = new HashMap<>();
 
-        HashSet<Integer>unique=new HashSet<>();
-        HashSet<Integer>duplicate=new HashSet<>();
+        for (char ch : charArray) {
+            Integer value = map.getOrDefault(ch, 0);
+            map.put(ch,value+1);
+        }
 
-        for(int num:array){
-            if(!unique.add(num)){
-                duplicate.add(num);
+//        System.out.println(map);
+
+        boolean hasDuplicate = false;
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            if (entry.getValue() > 1) {
+                System.out.println(entry.getKey() + " " + (entry.getValue() - 1));
+                hasDuplicate = true;
             }
         }
 
-        if (duplicate.isEmpty()){
+
+
+        if (!hasDuplicate) {
             System.out.println("Unique Array");
-        }
-        else {
-            System.out.println("duplicate");
-            for (int num:duplicate){
-                System.out.println(num);
-            }
 
         }
-
-
-
-
-
-
-
     }
 }
+
+
+
+
+
+
+
 
 
 

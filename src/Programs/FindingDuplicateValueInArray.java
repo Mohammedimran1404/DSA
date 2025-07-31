@@ -14,7 +14,6 @@ public class FindingDuplicateValueInArray {
                 duplicate.add(num);
             }
         }
-
         if (duplicate.isEmpty()){
             System.out.println("Unique Array");
         }
