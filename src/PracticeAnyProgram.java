@@ -1,35 +1,29 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class PracticeAnyProgram {
     public static void main(String[] args) {
 
-        String str = "abcdbca";
-        char[] charArray = str.toCharArray();
+   String str="persistent";
 
-        HashMap<Character, Integer> map = new HashMap<>();
+   char[] chArray=str.toCharArray();
 
-        for (char ch : charArray) {
-            Integer value = map.getOrDefault(ch, 0);
-            map.put(ch,value+1);
-        }
+        LinkedHashSet<Character> duplicate=new LinkedHashSet<>();
+        LinkedHashSet<Character> unique=new LinkedHashSet<>();
 
-//        System.out.println(map);
-
-        boolean hasDuplicate = false;
-        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-            if (entry.getValue() > 1) {
-                System.out.println(entry.getKey() + " " + (entry.getValue() - 1));
-                hasDuplicate = true;
+        for (char ch:chArray){
+            if (!unique.add(ch)){
+                duplicate.add(ch);
             }
         }
+        System.out.println(unique);
+        unique.removeAll(duplicate);
+        System.out.println(unique);
 
 
 
-        if (!hasDuplicate) {
-            System.out.println("Unique Array");
 
-        }
+
+
     }
 }
 

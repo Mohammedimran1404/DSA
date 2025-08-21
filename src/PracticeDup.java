@@ -1,26 +1,38 @@
-import java.util.HashSet;
-
 public class PracticeDup {
     public static void main(String[] args) {
+        String s = "abaz";
+        String longest = "";
 
-       String str="abcdab";
+        for (int i = 0; i < s.length(); i++) {
+            // Odd length palindrome
+            int left = i, right = i;
+            while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
+                if (right - left + 1 > longest.length()) {
+                    longest = s.substring(left, right + 1);
+                    System.out.println(longest);
+                }
+                left--;
+                right++;
+            }
 
-       char[] chArray=str.toCharArray();
-       HashSet<Character> unique=new HashSet<>();
-       HashSet<Character>duplicate=new HashSet<>();
+            // Even length palindrome
+            left = i;
+            right = i + 1;
+            while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
+                if (right - left + 1 > longest.length()) {
+                    longest = s.substring(left, right + 1);
+                }
+                left--;
+                right++;
+            }
+        }
 
-       for (char ch:chArray){
-           if(!unique.add(ch)){
-               duplicate.add(ch);
-           }
-       }
-        System.out.println(duplicate);
-
-
-
-
-
+        System.out.println("Input: " + s);
+        System.out.println("Longest Palindromic Substring: " + longest);
     }
+}
 
-    }
+
+
+
 

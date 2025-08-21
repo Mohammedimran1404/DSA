@@ -1,14 +1,13 @@
-package PracticePrograms;
+package Programs;
 
 public class FactorialOfNumber {
     public static void main(String[] args) {
-
-        int number=5;
+        int num=5;
         int result=1;
 
-        for (int i=number;i>=1;i--){
+        for (int i=num;i>=1;i--){
             result=result*i;
         }
-        System.out.println("Factorial of number is "+result);
+        System.out.println(result);
     }
 }
