@@ -13,7 +13,7 @@ public class MaxRepeatingChar {
         }
 
         int maxCount=0;
-        char maxCh=str.charAt(0);
+        char maxCh='\0';
 
         for (Map.Entry<Character,Integer> entry:map.entrySet()){
             if(entry.getValue()>maxCount){
