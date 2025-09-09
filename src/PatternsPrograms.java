@@ -83,7 +83,7 @@ public class PatternsPrograms {
         int n = 5;
         for (int i = 1; i <= 2 * n; i++) {
 
-            int allCols = i > n ? 2 * n - i : i;
+            int allCols = i > n ? 2 * n -i : i;
             for (int j = 1; j <= n - allCols; j++) {
                 System.out.print(" ");
             }
@@ -160,14 +160,14 @@ public class PatternsPrograms {
         PatternsPrograms patternsPrograms = new PatternsPrograms();
 //       patternsPrograms.reverseRightTriangle();
 //      patternsPrograms.rightTrianglePattern();
-//        patternsPrograms.rectangle();
+//       patternsPrograms.rectangle();
         // patternsPrograms.rightTrianglePatternWithNumber();
 //        patternsPrograms.leftTriangle();
 //        patternsPrograms.rotatedTriangle();
 //         patternsPrograms.trianglePattern();
-//        patternsPrograms.diamondPattern();
+        patternsPrograms.diamondPattern();
 //        patternsPrograms.practice();
 //        patternsPrograms.practicePatterns();
-        patternsPrograms.trianglePatternWithNumbers();
+//        patternsPrograms.trianglePatternWithNumbers();
     }
 }
