@@ -2,13 +2,13 @@ package Programs;
 
 import java.util.HashSet;
 
-public class ComparingTwoStringsChar {
+public class ComparingTwoStringsCommonChar {
     public static void main(String[] args) {
-//        String str="abcd";
-//        String str1="bxyzd";
+        String str="abcd";
+        String str1="bxyzd";
 
-        String str="apple";
-        String str1="pineapple";
+//        String str="apple";
+//        String str1="pineapple";
 
         HashSet<Character> set=new HashSet<>();
         HashSet<Character> common=new HashSet<>();

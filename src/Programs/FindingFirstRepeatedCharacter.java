@@ -20,3 +20,30 @@ public class FindingFirstRepeatedCharacter {
         }
     }
 }
+
+/**
+ * second repeated character
+ * String str = "abajabd";
+ *
+ *       HashSet<Character> unique = new HashSet<>();
+ *       HashSet<Character> common = new HashSet<>();
+ *
+ *       for (char ch : str.toCharArray()) {
+ *          if (!unique.add(ch)) {
+ *             common.add(ch);
+ *
+ *          }
+ *
+ *       }
+ *       int count = 0;
+ *       for (char ch : str.toCharArray()) {
+ *          if (common.contains(ch)) {
+ *             count++;
+ *
+ *             if (count == 2) {
+ *                System.out.println(ch);
+ *                break;
+ *             }
+ *          }
+ *       }
+ */

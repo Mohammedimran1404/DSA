@@ -24,13 +24,13 @@ public class PatternsList {
      *
      * 📌 Number Patterns
      *
-     * Increasing numbers
+     * Increasing numbers -- done
      *
-     * Repeated numbers
+     * Repeated numbers  -- done
      *
      * Inverted number triangle
      *
-     * Floyd’s triangle
+     * Floyd’s triangle -- done
      *
      * Number pyramid
      *
@@ -38,7 +38,7 @@ public class PatternsList {
      *
      * Continuous numbers in triangle
      *
-     * Palindrome number triangle
+     * Palindrome number triangle -- done
      *
      * 📌 Alphabet (Character) Patterns
      *

@@ -1,22 +1,25 @@
-public interface Test {
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
+public class Test {
     public static void main(String[] args) {
-        System.out.println("Hello world");
-    }
+             int num=1;
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(num+" ");
+                num++;
+            }
+            System.out.println(" ");
+        }
 
-    public static final int a=10;
+            }
+        }
 
 
-    void m1();
 
-    static void m2(){
-        System.out.println("I am static method");
-    }
 
-    default void m3(){
-        System.out.println("I am default method");
-    }
 
-    private void m4(){
-        System.out.println("I am private ");
-    }
-}
+
+
