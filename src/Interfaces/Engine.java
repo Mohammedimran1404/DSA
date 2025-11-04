@@ -1,7 +1,8 @@
 package Interfaces;
 
 public interface Engine {
-  int a=10;
+   int a=10;
+
     void start();
 
     default void brake(){
@@ -10,6 +11,7 @@ public interface Engine {
     }
 
     private void seatBelt(){
+
         System.out.println("wear seatbelt to avoid accidents");
     }
 

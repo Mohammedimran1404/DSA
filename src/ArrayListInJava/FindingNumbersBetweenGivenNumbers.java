@@ -11,7 +11,7 @@ public class FindingNumbersBetweenGivenNumbers {
 
         int[] array ={1,2,3,4,5,6,7,8,9,10};
         for(int i=0;i<array.length;i++){
-            if(array[i]>=startNumber&&array[i]<=endNumber){
+            if(array[i]>startNumber&&array[i]<endNumber){
               data.add(array[i]);
             }
         }
@@ -24,9 +24,10 @@ public class FindingNumbersBetweenGivenNumbers {
 
 
         int[] storeArray =new int[array.length];
+
         int count=0;
         for (int i=0;i<array.length;i++){
-            if(array[i]>=startNumber&&array[i]<=endNumber){
+            if(array[i]>startNumber&&array[i]<endNumber){
                 storeArray[count]=array[i];
                 count++;
             }

@@ -5,42 +5,24 @@ import java.util.Set;
 
 public class CountingOnlyRepeatedCharacters {
     public static void main(String[] args) {
-        // Input string
         String input = "aaafffacvwww";
-
-        // Call the compress method and print the result
-        String compressed = compressString(input);
-        System.out.println(compressed);
-    }
-
-    public static String compressString(String input) {
-        // Initialize a StringBuilder for the result
         StringBuilder result = new StringBuilder();
 
-        // Get the length of the input string
-        int length = input.length();
+        for (int i = 0; i < input.length(); ) { // No i++ here
 
-        // Iterate through the string
-        for (int i = 0; i < length; i++) {
-            // Count occurrences of the current character
             char currentChar = input.charAt(i);
-            int count = 1;
-
-            while (i + 1 < length && input.charAt(i + 1) == currentChar) {
+            int count = 0;
+            // Count occurrences of currentChar
+            for (int j = i; j < input.length() && input.charAt(j) == currentChar; j++) {
                 count++;
-                i++;
             }
-
-            // Append the character to the result
             result.append(currentChar);
-
-            // Append the count if greater than 1
             if (count > 1) {
                 result.append(count);
             }
+            i =i+count; // Move index forward by count
         }
-
-        // Return the compressed string
-        return result.toString();
+        System.out.println(result);  // Output: a3f3acvw3
     }
+
 }

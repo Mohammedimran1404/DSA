@@ -12,9 +12,7 @@ public class PracticeStoringInList {
     }
 
         public List<String> storeMultiElementsInLst() {
-
-//            List<String> myLst = Arrays.asList("Apple", "Apple", "Apple");
-            List<String> myLst=new ArrayList<>();
+         List<String> myLst=new ArrayList<>();
             myLst.add("Apple");
             myLst.add("Apple");
             myLst.add("Apple");
