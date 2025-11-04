@@ -6,6 +6,7 @@ public class MissingNumberInArray {
 
         int n=array.length+1;
         int actualSum=n*(n+1)/2;
+        System.out.println(actualSum);
         int expectedSum=0;
 
         for(int num:array){

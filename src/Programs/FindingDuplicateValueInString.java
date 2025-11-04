@@ -5,7 +5,7 @@ import java.util.HashSet;
 public class FindingDuplicateValueInString {
     public static void main(String[] args) {
 
-        String str = "abcaefbaa";
+            String str = "abcaefbaa";
         char[] chArray = str.toCharArray();
         HashSet<Character> unique = new HashSet<>();
         StringBuffer duplicate = new StringBuffer();

@@ -13,11 +13,11 @@ public class FindingDistinctArraySum {
             map.put(num,value+1);
         }
         int sum=0;
-        for(Map.Entry<Integer,Integer>entry:map.entrySet()){
-            if(entry.getValue()==1){
-                sum+= entry.getKey();
+            for(Map.Entry<Integer,Integer>entry:map.entrySet()){
+                if(entry.getValue()==1){
+                    sum+= entry.getKey();
+                }
             }
-        }
         System.out.println(sum);
     }
 }
