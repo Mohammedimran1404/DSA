@@ -5,8 +5,8 @@ public class MaxAndSecondMaxArray {
 
         int[] array={2,1,4,5,8,6};
 
-        int maxArray=array[0];
-        int secMaxArray=array[0];
+        int maxArray=Integer.MIN_VALUE;
+        int secMaxArray=Integer.MIN_VALUE;
 
         for (int num:array){
             if(num>maxArray){

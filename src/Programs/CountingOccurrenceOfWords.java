@@ -8,8 +8,8 @@ public class CountingOccurrenceOfWords {
         String[] strArray=str.split(" ");
         LinkedHashMap<String,Integer> map=new LinkedHashMap<>();
         for (String word:strArray){
-            int value=map.getOrDefault(word,0);
-            map.put(word,value+1);
+            map.put(word,map.getOrDefault(word,0)+1);
+
         }
         System.out.println(map);
 
