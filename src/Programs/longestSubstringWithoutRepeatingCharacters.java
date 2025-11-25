@@ -1,12 +1,13 @@
 package Programs;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class longestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
-        String s = "abdabba";
+        String s = "imran";
 
-        HashMap<Character, Integer> map = new HashMap<>();
+        LinkedHashMap<Character, Integer> map = new LinkedHashMap<>();
         int start = 0, maxLength = 0, startIndex = 0;
 
         for (int end = 0; end < s.length(); end++) {
@@ -19,7 +20,7 @@ public class longestSubstringWithoutRepeatingCharacters {
 
             // store/update latest index of character
             map.put(c, end);
-
+            System.out.println(map);
             // update max length
             if ((end - start + 1) > maxLength) {
                 maxLength = end - start + 1;
