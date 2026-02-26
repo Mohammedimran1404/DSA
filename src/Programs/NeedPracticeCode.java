@@ -7,33 +7,33 @@ public class NeedPracticeCode {
      *
      * These are the most frequently asked.
      *
-     * Reverse a string
+     * Reverse a string 🔥
      *
-     * Check if a string is palindrome
+     * Check if a string is palindrome 🔥
      *
-     * Count occurrences of each character in a string
+     * Count occurrences of each character in a string 🔥
      *
-     * Find the first non-repeating character
+     * Find the first non-repeating character 🔥
      *
-     * Remove duplicate characters from a string
+     * Remove duplicate characters from a string 🔥
      *
-     * Find duplicate characters
+     * Find duplicate characters 🔥
      *
-     * Reverse each word in a sentence
+     * Reverse each word in a sentence 🔥
      *
-     * Count vowels & consonants
+     * Count vowels & consonants 🔥
      *
-     * Check anagram (race vs care)
+     * Check anagram (race vs care) 🔥
      *
-     * Longest substring without repeating characters (Very common SDET Question)
+     * Longest substring without repeating characters (Very common SDET Question) 🔥
      *
-     * Print character frequency using HashMap
+     * Print character frequency using HashMap 🔥
      *
-     * Convert first letter of each word to uppercase
+     * Convert first letter of each word to uppercase 🔥
      *
-     * Compare two strings without using equals()
+     * Compare two strings without using equals() 🔥
      *
-     * String rotation (ABCD → CDAB ?)
+     * String rotation (ABCD → CDAB ?) 🔥
      *
      * Check balanced parentheses — ()[]{}
      *
@@ -43,31 +43,31 @@ public class NeedPracticeCode {
      *
      * Companies love arrays because testers use them for API validation, web tables, etc.
      *
-     * Find max number in array
+     * Find max number in array 🔥
      *
-     * Find min number in array
+     * Find min number in array 🔥
      *
-     * Sort array without using sort()
+     * Sort array without using sort() 🔥
      *
-     * Remove duplicates from array
+     * Remove duplicates from array 🔥
      *
-     * Print duplicates
+     * Print duplicates 🔥
      *
-     * Merge two arrays
+     * Merge two arrays 🔥
      *
-     * Move 0s to the end
+     * Move 0s to the end 🔥
      *
-     * Find missing number
+     * Find missing number 🔥
      *
-     * Second largest number
+     * Second largest number 🔥
      *
-     * Reverse array elements
+     * Reverse array elements 🔥
      *
-     * Find sum of elements
+     * Find sum of elements 🔥
      *
      * Rotate array left / right
      *
-     * Find pair with given sum (Two Sum problem)
+     * Find pair with given sum (Two Sum problem) 🔥
      *
      * Count frequency of numbers
      *

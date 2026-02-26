@@ -20,7 +20,7 @@ public class longestSubstringWithoutRepeatingCharacters {
 
             // store/update latest index of character
             map.put(c, end);
-            System.out.println(map);
+
             // update max length
             if ((end - start + 1) > maxLength) {
                 maxLength = end - start + 1;
