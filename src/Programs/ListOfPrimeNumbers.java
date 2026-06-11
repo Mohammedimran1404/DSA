@@ -5,13 +5,14 @@ public class ListOfPrimeNumbers {
         int num=2,num1=50;
 
         for (int i=num;i<=num1;i++){
-            int count=0;
-            for (int j=1;j<=i;j++){
+            boolean value=true;
+            for (int j=2;j<=i/2;j++){
                 if(i%j==0){
-                    count++;
+                    value=false;
+                    break;
                 }
             }
-            if(count==2){
+            if(value){
                 System.out.println(i);
             }
         }

@@ -21,3 +21,20 @@ public class ReverseStringUsingSplitting {
         }
     }
 }
+
+// another way of doing
+/**
+ * double d=123.41;
+ *         String convString=String.valueOf(d);
+ *         String[] strArray=convString.split("\\.");
+ *         StringBuilder rev=new StringBuilder();
+ *         for(int j=0;j<strArray.length;j++){
+ *             for(int i=strArray[j].length()-1;i>=0;i--){
+ *                 rev.append(strArray[j].charAt(i));
+ *             }
+ *             if(j<strArray.length-1){
+ *                 rev.append(".");
+ *             }
+ *         }
+ *         System.out.println(rev);
+ */
